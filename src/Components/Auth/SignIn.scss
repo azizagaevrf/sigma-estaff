@@ -1,0 +1,133 @@
+.background {
+  background: url(../../img/background.jpg) no-repeat;
+  background-size: cover;
+}
+
+.header-auth {
+  position: relative;
+
+  &__inner {
+    position: absolute;
+    width: 100vw;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__label {
+    color: #fff;
+    font: 400 18px/22px Gothic A1, sans-serif;
+    padding-top: 20px;
+  }
+
+  &__logo {
+    width: 118px;
+    height: 118px;
+  }
+}
+
+.logo-auth {
+  border: 9px solid #037DBF;
+  position: relative;
+  border-radius: 50%;
+
+  &__svg {
+    position: absolute;
+    width: 45%;
+    left: 28.125%;
+
+    &_top {
+      top: 21%;
+    }
+
+    &_bottom {
+      bottom: 21%;
+      transform: scale(1, -1);
+    }
+  }
+
+  &__label {
+    text-align: center;
+    margin-top: 35.5%;
+    font: bold 26px/32.5px Gothic A1, sans-serif;
+    color: #fff;
+  }
+}
+
+.wrap {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dialog-box {
+  border: 2px solid #037DBF;
+  border-radius: 20px;
+  width: 419px;
+  height: 416px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(32, 66, 101, 0.29);
+  backdrop-filter: blur(6px);
+
+  &__header {
+    font: 36px/42px Roboto, sans-serif;
+    color: #fff;
+    margin-top: 37px;
+  }
+
+  &__input {
+    margin-top: 32px;
+  }
+
+  &__btn {
+    margin-top: 32px;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 307px;
+    padding: 0 30px;
+  }
+
+  &__link {
+    font: 500 14px/16px Roboto, sans-serif;
+    color: #5CB8D5;
+    text-decoration: none;
+  }
+}
+
+.input {
+  width: 307px;
+  height: 56px;
+  border-radius: 8px;
+  font: 18px/21px Roboto, sans-serif;
+  text-align: center;
+  outline: 0;
+}
+
+.btn {
+  width: 307px;
+  height: 56px;
+  font: 18px/21px Roboto, sans-serif;
+  color: #fff;
+  background: linear-gradient(180deg, #54ABD9 0%, #0B3951 100%);
+  border: 0;
+  border-radius: 28px;
+  outline: 0;
+  transition: box-shadow 1s, transform 0.1s;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}

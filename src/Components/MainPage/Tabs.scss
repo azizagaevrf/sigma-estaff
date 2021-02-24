@@ -1,0 +1,38 @@
+.Tabs {
+  height: 58px;
+  margin-bottom: 19px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+
+  &__tab {
+    width: 280px;
+    cursor: pointer;
+
+    &_active {
+      .Tabs {
+        &__title {
+          color: #037DBF
+        }
+
+        &__line {
+          background: #037DBF
+        }
+      }
+    }
+  }
+
+  &__title {
+    margin-top: 12px;
+    font: 500 18px/22.5px Gothic A1, sans-serif;
+    color: #B5B5B5;
+    margin-bottom: 3px;
+  }
+
+  &__line {
+    height: 4px;
+    background: #B5B5B5;
+    border-radius: 5px;
+    border: 0;
+  }
+}

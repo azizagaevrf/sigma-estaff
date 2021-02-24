@@ -1,0 +1,51 @@
+.ButtonAddSkill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  width: 257px;
+  height: 44px;
+  outline: 0;
+  background: linear-gradient(90deg, #037DBF 0%, #54D3F4 98.44%);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.28);
+  border: 0;
+  border-radius: 8px;
+  transition: box-shadow 0.3s, transform 0.1s;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.40);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &__title {
+    font: 700 16px/16px Gothic A1, sans-serif;
+    text-align: left;
+    color: #fff;
+  }
+
+  &__plus {
+    position: relative;
+    width: 25px;
+    height: 25px;
+  }
+
+  &__hor-line {
+    position: absolute;
+    top: 12px;
+    height: 1px;
+    width: 100%;
+    background: #fff;
+  }
+
+  &__vert-line {
+    position: absolute;
+    left: 12px;
+    width: 1px;
+    height: 100%;
+    background: #fff;
+  }
+}
